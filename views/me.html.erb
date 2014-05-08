@@ -1,1 +1,19 @@
-foo
+<div style="color:#0000FF">
+  <h1>This is my Team</h1>
+</div>
+<% team = {:PG => ["Anton", "Toni"], :SG => ["PAPA"]} %>
+<% team2 = ["Anton", "Toni", "PAPA"] %>
+<p>My team2 consists of: </p>
+<% team2.each do |value| %>
+	<%= value %> <br />
+	<% end %>
+
+<p>My team consists of: </p>
+<% team.each do |value, key| %>
+	<%= value %> :  <br />
+	<% key.each do |name| %>
+	<%= name %><br />
+	<% end %>
+	<% end %>	
+
+
